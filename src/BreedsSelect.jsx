@@ -10,7 +10,7 @@ export const BreedsSelect = ({breeds, selectedBreed, setSelectedBreed}) => {
     <select value={selectedBreed} onChange={setSelectedBreed}>
     {/* <select value={selectedBreed} onChange={setSelectedBreed}> */}
       <option value="" selected>--Please choose an option--</option>
-      {selectedBreed = breeds.map((breed) => (
+      {breeds.map((breed) => (
         <option key={breed} value={breed}>
           {breed}
         </option>
