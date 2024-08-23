@@ -29,10 +29,6 @@ export const Description = () => {
   return (
     <main>
       <h2>犬の画像を表示するサイトです</h2>
-      {/* <img 
-        src={dogUrl}
-        alt="犬の画像" 
-      /> */}
       <DogImage imageUrl={dogUrl}/>
       <button onClick={() => dogAPI()}>
         更新
